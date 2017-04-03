@@ -1,7 +1,7 @@
 TinyTurtle.apply(window);
 stamp();
 
-function triangle(x,y){
+/*function triangle(x,y){
     right(y-45);
     forward(x);
     right(y);
@@ -27,8 +27,21 @@ function shape(shapeName){
     }
 
 }
+*/
 
+function pentagon(x,y){
+    for(var i=0;i<5;i++){
+    right(y);
+    forward(x);
+    }
+}
+function shape(shapeName){
+    if (shapeName==="pentagon"){
+        pentagon(50,72);
+    }
+}
 // Type your function call below
 
-shape("triangle");
-shape("square");
+//shape("triangle");
+//shape("square");
+shape("pentagon");
